@@ -1,0 +1,141 @@
+/* cuando vallamos a trabajar con bootstrap se recomienda tener secciones de configuracion en nuestro css
+   y estas son las siguientes 
+*/
+
+
+
+
+/* ********** Custom Properties o Variables Css********** */
+:root {
+  --first-color:rgb(206, 99, 99);
+  --second-color:rgb(51, 51, 219);
+  --three-color:rgb(61, 187, 110);
+  --text-color: rgb(209, 123, 25);
+}
+
+
+
+/* ********** Reset Styles:  para resetear algunas etiquetas en particular********** */
+
+a {
+  color: var(--text-color);
+  transition: all ease-in-out .3s;
+}
+
+a:hover{
+  color: var(--first-color);
+}
+
+
+
+
+/* ********** Bootstrap Styles : para modificar el codigo css de bootstrap ********** */
+
+.bg-dark {
+  background: linear-gradient(to right, #505050, #801020);
+  box-shadow: 0 15px 20px rgba(0, 0, 0,.5);
+}
+
+
+.dropdown-item{
+  background-color: aliceblue;
+  font-weight: bold;
+  
+}
+
+.dropdown-item:hover{
+  color: cadetblue;
+}
+.dropdown-menu{
+background-color: aliceblue;
+}
+
+.navbar-brand img{
+  width: auto;
+  height: 30px;
+}
+
+/* si buscamos en la hoja de css de bootstrap veremos que la clase padre que contiene a esa variable es navbar entonces desde ahi la 
+   modificamos, por ejemplo el color  stroke='rgba%2846, 177, 96, 0.75%29', %28 y %29 representan parentesisi que abren y cierra los demas 
+   203, 207, 209, 0.75 representan los colores y la opacidad*/
+
+
+.navbar .navbar-toggler{
+  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28203, 207, 209, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  transition: all ease-in-out .3s;
+}
+
+
+.navbar .navbar-toggler:hover{
+  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2846, 177, 96, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  opacity: .55;
+}
+
+
+.nav-item {
+  transition: all ease-out .3s;
+}
+
+
+.nav-item:hover {
+  background-color: var(--first-color);
+  color: aliceblue;
+ 
+}
+
+.nav-link {
+  margin-left: 10px;
+  color: var(--text-color);
+  font-weight: bold;
+}
+
+
+
+
+/* En resumen, margin-left: auto; se usa para empujar un elemento hacia la derecha tanto como sea posible dentro de su contenedor, lo que puede ser útil para lograr diseños de alineación a la derecha en una página web */
+
+/* ********** My Styles: estilos mios ********** */
+
+
+
+main{
+  min-height: 100vh;
+}
+
+
+
+
+
+
+
+
+/* PUNTOS DE REPTURA EN BOOTSTRAP */
+
+/* // X-Small devices (portrait phones, less than 576px)
+    // No media query for `xs` since this is the default in Bootstrap */
+
+
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .nav-item:hover {
+    background-color: transparent;
+  }
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+}
