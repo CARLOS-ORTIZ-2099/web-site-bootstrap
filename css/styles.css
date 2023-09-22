@@ -106,11 +106,17 @@ background-color: aliceblue;
 .bg-gradient-color-custom{
   /* background: linear-gradient(to right, #101070, #109010); */
   background-color: rgba(0, 150, 150, .7);
+
   background-image: linear-gradient(135deg, rgba(0, 10, 150,.7), rgba(150,10,10,.7));
+
+}
+.bg-third-color {
+  background-color: var(--three-color);
 }
 
-
-
+.text-third-color {
+  background-color: var(--three-color);
+}
 
 
 /* PUNTOS DE REPTURA EN BOOTSTRAP */
